@@ -1,0 +1,111 @@
+
+<!--How do forms work in HTML? (action, method)
+<form> collects user input.
+
+action → URL where form data is sent.[ to database for 
+verification ]
+
+method → HTTP method used:
+
+GET: appends data to URL (visible, less secure, good for search queries).
+
+POST: sends data in request body (secure, used for login, payments).
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> <title>simple form</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+<style>
+    body{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(249, 248, 248);
+    }
+
+    .container{
+        width: 320px;
+        height: 320px;
+        /*border: solid black;*/
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        margin-top: 10%;
+        border-radius: 10px;
+        background-color: #fff;
+      
+    }
+
+    #heading{
+        margin-left: 35%;
+        margin-bottom: 5px;
+    }
+    #email{
+        margin-left: 10%;
+        margin-bottom: 3px;
+        
+    }
+    #inputs{
+        margin-left: 10%;
+        margin-bottom: 2px;
+        width: 200px;
+        height: 25px;
+    }
+    #password{
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    #input{
+        margin-left: 10%;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 25px;
+    }
+
+    #button1{
+        margin-left: 30%;
+        margin-top: 15px;
+        margin-top: 5px;
+        width: 50px;
+    }
+    #link{
+        margin-left: 10%;
+        margin-top: 15px;
+    }
+    #signin{
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <form action="/" method="" onsubmit="">
+    <h3 id="heading">simple form</h3><br>
+    <h3 id="email">email</h3>
+    <input id="inputs" type="email" placeholder="Enter the email">
+
+    <h3 id="password">password</h3>
+    <input id="input" type="password" placeholder="Enter the password"><br>
+
+    <button id="button1" type="button">login</button><br>
+
+    <a href="/Users/Lenovo/OneDrive/Desktop/minitaskstoupload/mini%20tasks/login/forgotpassword.html" id="link">forgot password</a>
+    <a href="/mini tasks/login/signinpage.html" id="signin">signin</a>
+    </form>
+
+
+
+  </div>
+
+</body>
+
+</html>
