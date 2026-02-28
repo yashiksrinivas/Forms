@@ -91,10 +91,10 @@ POST: sends data in request body (secure, used for login, payments).
     <form action="/" method="" onsubmit="">
     <h3 id="heading">simple form</h3><br>
     <h3 id="email">email</h3>
-    <input id="inputs" type="email" placeholder="Enter the email">
+    <input id="inputs" type="email"  name="email" placeholder="Enter the email" required/>
 
     <h3 id="password">password</h3>
-    <input id="input" type="password" placeholder="Enter the password"><br>
+    <input id="input" type="password" name="password" minlength="4" placeholder="Enter the password" required /><br>
 
     <button id="button1" type="button">login</button><br>
 
@@ -107,5 +107,6 @@ POST: sends data in request body (secure, used for login, payments).
   </div>
 
 </body>
+
 
 </html>
